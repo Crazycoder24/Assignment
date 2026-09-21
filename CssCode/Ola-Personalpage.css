@@ -1,0 +1,582 @@
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+
+/*  NAVIGATION BAR */
+
+.navbar {
+    height: 80px;
+    background-color: #0a3b6d;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Generic class
+   This can be reused for different elements */
+.name {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-right: auto;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* <a> styling */
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+
+/* Required hover effect */
+
+.nav-links a:hover {
+    color: #859f4d;
+}
+
+
+/* MAIN PERSONAL CONTENT */
+
+.personal-content {
+    display: flex;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* LEFT SIDEBAR */
+
+.personal-sidebar {
+    width: 300px;
+
+    background-color: #073f5b;
+
+    color: white;
+
+    padding: 35px 30px;
+
+    flex-shrink: 0;
+}
+
+
+/* Profile photo */
+
+.profile-photo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* Photo */
+
+.profile-photo img {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+}
+
+
+/* sidebar headings */
+
+.personal-sidebar h2 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-top: 30px;
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+/* Line under Contact / Education / Interests */
+
+.sidebar-line {
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+
+    margin-bottom: 18px;
+}
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Sidebar paragraphs */
+
+.personal-sidebar p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* EMAIL / PAGE LINKS */
+
+.page-link {
+    color: #0866d6;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s;
+}
+
+
+/* Hover effect for page links */
+
+.page-link:hover {
+    color: #b2848b;
+    text-decoration: underline;
+}
+
+
+/* Email inside sidebar */
+
+.personal-sidebar .page-link {
+    color: white;
+}
+
+
+/* INTEREST LIST IN SIDEBAR */
+
+.interset-list {
+    padding-left: 20px;
+
+    margin-top: 10px;
+}
+
+
+.interset-list li {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+
+/* RIGHT MAIN AREA */
+
+.personal-main {
+    flex: 1;
+
+    background-color: #f4f6f8;
+
+    padding: 40px 55px;
+}
+
+
+/* HEADER */
+
+
+.profile-header h1 {
+    color: #072544;
+
+    font-size: 48px;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+/* Header paragraph */
+
+.profile-header p {
+    color: #555555;
+
+    font-size: 22px;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+/*PROFILE SECTIONS */
+
+.profile-text {
+    margin-bottom: 45px;
+}
+
+
+/* Headings */
+
+.profile-text h2 {
+    color: #072544;
+
+    font-size: 30px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Section horizontal line */
+
+.section-line {
+    width: 100%;
+
+    height: 2px;
+
+    background-color: #072544;
+
+    margin-bottom: 20px;
+}
+
+
+/*CONTEXTUAL STYLE*/
+
+
+
+div.profile-text p {
+    color: #40566b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* INTEREST BOXES */
+
+.interset-boxes {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* Each interest box */
+
+.interset-box {
+    flex: 1;
+
+    background-color: white;
+
+    border: 1px solid #d4dfe8;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Small effect when mouse moves over box */
+
+.interset-box:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Interest title */
+
+.interset-box h3 {
+    color: #072544;
+
+    font-size: 21px;
+
+    margin-top: 0;
+}
+
+
+/* Interest paragraph */
+
+.interset-box p {
+    font-size: 15px;
+
+    color: #555555;
+}
+.interset-vedio {
+  width:100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display:block;
+}
+
+
+/* CAREER DEVELOPMENT PLAN */
+
+.career-plan {
+    width: 100%;
+}
+
+
+/* One career item */
+
+.plan-item {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+    padding-left: 20px;
+
+    border-left: 5px solid #072544;
+}
+
+
+/* Number circle */
+
+.plan-number {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    background-color: #072544;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* Career heading */
+
+.plan-item h3 {
+    color: #072544;
+
+    font-size: 21px;
+
+    margin-top: 0;
+
+    margin-bottom: 5px;
+}
+
+
+/* Career paragraph */
+
+.plan-item p {
+    margin-top: 0;
+
+    color: #40566b;
+
+    line-height: 1.8;
+}
+
+
+/*LINKS AT THE BOTTOM */
+
+.profile-links {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 40px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #cccccc;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #072544;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 0;
+}
+
+
+/* Footer paragraph */
+
+.footer p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE DESIGN*/
+
+
+/* TABLET */
+
+@media screen and (max-width: 900px) {
+
+    .personal-content {
+        flex-direction: column;
+    }
+
+    .personal-sidebar {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .sidebar-line {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .interset-list {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+
+    .personal-main {
+        padding: 35px;
+    }
+
+    .profile-header h1 {
+        font-size: 38px;
+    }
+
+    .interset-boxes {
+        flex-wrap: wrap;
+    }
+
+    .interset-box {
+        min-width: 45%;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .name {
+        margin-right: 0;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .personal-sidebar {
+        padding: 25px 20px;
+    }
+
+    .personal-main {
+        padding: 25px 20px;
+    }
+
+    .profile-header h1 {
+        font-size: 30px;
+    }
+
+    .profile-header p {
+        font-size: 18px;
+    }
+
+    .profile-text h2 {
+        font-size: 24px;
+    }
+
+    .interset-boxes {
+        flex-direction: column;
+    }
+
+    .interset-box {
+        width: 100%;
+    }
+
+    .plan-item {
+        padding-left: 10px;
+    }
+
+    .profile-links {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+}
